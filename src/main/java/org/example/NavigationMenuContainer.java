@@ -9,7 +9,7 @@ public class NavigationMenuContainer extends JPanel {
     JLabel[][] tableNameLbl;
     JButton[][] tablesBtn;
     Random rnd = new Random();
-    int gridArea = 0;
+    int gridArea;
     public NavigationMenuContainer() {
         int size = rnd.nextInt(20);
         gridArea = (size % 2 == 0) ? size : size + 1;
@@ -44,11 +44,6 @@ public class NavigationMenuContainer extends JPanel {
                 tablesBtn[i][j].setPreferredSize(new Dimension(50,100));
                 tablesBtn[i][j].setVisible(true);
                 add(tablesBtn[i][j], gbc);
-
-
-                // gridx = i; gridy = j; gbc = insets (5,5,5,5)
-                // addJbutton[i][j]
-                // addJLabel[i][j]
             }
         }
 
