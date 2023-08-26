@@ -5,7 +5,7 @@ import java.awt.*;
 import java.util.Random;
 
 public class NavigationMenuContainer extends JPanel {
-
+    // owo
     JLabel[][] tableNameLbl;
     JButton[][] tablesBtn;
     Random rnd = new Random();
